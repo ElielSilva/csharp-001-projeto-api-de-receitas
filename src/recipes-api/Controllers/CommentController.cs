@@ -24,13 +24,15 @@ public class CommentController : ControllerBase
     [HttpPost]
     public IActionResult Create([FromBody]Comment comment)
     {
-        throw new NotImplementedException();
+        _service.AddComment(comment);
+        return Created("201", comment);
     }
 
     // 11 - Sua aplicação deve ter o endpoint GET /comment/:recipeName
     [HttpGet("{name}", Name = "GetComment")]
     public IActionResult Get(string name)
     {                
-        throw new NotImplementedException();                   
+        var result = _service.GetComments(name);
+        return Ok(result);                  
     }
 }
