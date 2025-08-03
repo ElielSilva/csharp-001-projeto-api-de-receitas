@@ -46,17 +46,35 @@ Neste projeto, exercitei os conceitos:
   3. executar o projeto
   - ```bash
     dotnet run
+    ``
  
 </details>
 
-acessar a documentção interrativa
-Acesse o Swagger no navegador Geralmente, ele estará disponível em:
+## acessar a documentção interrativa
+Acesse o Swagger no navegador, pegue o link do servidor local no terminal e adicionar sweger:
 
-```bash
-https://localhost:5001/swagger
+exemplo de terminal:
+
+```csharp
+Compilando...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7233
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5057
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+```
+
+então o link será: 
+
+```
+https://localhost:7233/swagger
 ```
 ou
 
-```bash
-http://localhost:5000/swagger
+```
+http://localhost:5057/swagger
 ```
